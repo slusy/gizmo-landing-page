@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Navbar from "./components/navbar";
+import InnerPageLayout from "./components/misc/inner-page-layout";
 
 const primaryFont = localFont({
   src: "../public/fonts/Satoshi-Variable.ttf",
@@ -19,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={primaryFont?.className}>{children}</body>
+      <body className={`${primaryFont?.className} bg-primary-bg`}>
+        <InnerPageLayout>
+          <Navbar />
+          {children}
+        </InnerPageLayout>
+      </body>
     </html>
   );
 }
