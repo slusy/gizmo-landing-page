@@ -11,7 +11,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 
-export const DesktopNavbar = () => {
+export const DesktopNavbar: React.FC = () => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState<Boolean>(false);
   const [prevScroll, setPrevScroll] = useState<number>(0);
@@ -45,12 +45,12 @@ export const DesktopNavbar = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="fixed col-start-1 col-end-2 row-start-1 row-end-2 self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full"
+            className="fixed col-start-1 col-end-2 row-start-1 row-end-2 self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full backdrop-blur-md"
           >
             {NAV_LINKS?.map((item) => (
               <a
                 href={item?.link}
-                key={item?.id}
+                key={`desktop-nav-key-${item?.id}`}
                 className={classNames({
                   "rounded-full px-5 py-2 text-sm relative transition-[color] duration-700":
                     true,

@@ -10,13 +10,13 @@ export const MobileNavbar: React.FC = () => {
   const [selectedLink, setSelectedLink] = useState<String>("home");
 
   return (
-    <nav className="mb-12 flex items-center justify-between lg:hidden">
+    <nav className="mb-12 flex items-center justify-between lg:hidden px-4">
       <div>
         <Image src="logo/full-logo.svg" alt="logo" width={120} height={120} />
       </div>
       <button
         className={classNames({
-          "border rounded-full w-10 h-10 p-2 flex items-center justify-center z-[1000]":
+          "border rounded-full w-10 h-10 p-2 flex items-center justify-center z-[1000] backdrop-blur-md":
             true,
           "border-[#C4CACB]": !showMobileNav,
           "border-transparent bg-[#3D3D3D] fixed right-4": showMobileNav,
@@ -41,9 +41,11 @@ export const MobileNavbar: React.FC = () => {
         })}
       >
         {NAV_LINKS?.map((item) => (
-          <>
+          <div
+            key={`mobile-nav-key-${item?.id}`}
+            className="w-full flex flex-col items-center gap-4"
+          >
             <a
-              key={`mobile-nav-key-${item?.id}`}
               href={item?.link}
               className={classNames({
                 "text-3xl": true,
@@ -61,7 +63,7 @@ export const MobileNavbar: React.FC = () => {
             {!item?.last && (
               <div className="w-1/2 h-[2px] bg-[rgba(153,182,255,0.06)]"></div>
             )}
-          </>
+          </div>
         ))}
       </div>
     </nav>
