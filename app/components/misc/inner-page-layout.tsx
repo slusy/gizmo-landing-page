@@ -6,7 +6,7 @@ type Props = {
 
 const InnerPageLayout: React.FC<Props> = ({ children }: Props) => {
   return (
-    <div className="max-w-[1300px] mx-auto pt-6 px-3 h-screen">
+    <div className="max-w-[1300px] mx-auto h-screen">
       <div>{children}</div>
     </div>
   );
