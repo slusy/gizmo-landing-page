@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PRODUCT_DETAILS from "./products";
 import { Card } from "./card";
+import { ShimmerButtonText } from "../misc/shimmer-button-text";
 
 export const ProductTwo: React.FC = () => {
   return (
@@ -30,17 +31,7 @@ export const ProductTwo: React.FC = () => {
           />
         ))}
       </div>
-      <button className="flex items-center gap-2 border border-[#DADADA] rounded-full py-2 px-3 self-start">
-        <span className="text-[#414141]">Learn More</span>
-        <div className="border border-[#C0C0C0] rounded-full p-2 w-[30px] h-[30px] flex items-center justify-center">
-          <Image
-            src="/icons/icon-redirect.svg"
-            width={12}
-            height={12}
-            alt="redirect"
-          />
-        </div>
-      </button>
+      <ShimmerButtonText bgColor="white" />
     </div>
   );
 };
