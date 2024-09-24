@@ -6,7 +6,7 @@ import { ShimmerButtonText } from "../misc/shimmer-button-text";
 
 export const ProductThree: React.FC = () => {
   return (
-    <div className="w-full h-[260px] p-8 flex flex-col gap-4 relative overflow-hidden rounded-3xl border border-[#D8D8D8]">
+    <div className="w-full h-[260px] p-8 flex flex-col gap-4 relative overflow-hidden rounded-3xl border border-[#D8D8D8] shadow-[0px_4px_13.3px_0px_#00000012]">
       <Image
         src="/images/featured-speaker.png"
         alt="watch"
