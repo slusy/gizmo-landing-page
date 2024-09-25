@@ -5,7 +5,7 @@ interface navLinkFormat {
     last?: boolean;
   }
 
-  type navLink = navLinkFormat[];
+type navLink = navLinkFormat[];
 
 const NAV_LINKS: navLink = [
     {
@@ -41,4 +41,4 @@ const NAV_LINKS: navLink = [
     },
   ];
 
-  export default NAV_LINKS;
+export default NAV_LINKS;
