@@ -4,7 +4,7 @@ import React from "react";
 export const Controls: React.FC = () => {
   return (
     <div className="flex items-center">
-      <button className="flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC]">
+      <button className="flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC] hover:bg-[#dcdcdc] transition-colors">
         <Image
           src="/icons/icon-arrow.svg"
           width={15}
@@ -19,7 +19,7 @@ export const Controls: React.FC = () => {
           <div className="absolute w-2/4 h-full rounded-full bg-[#2A2A2A]"></div>
         </div>
       </div>
-      <button className="flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC]">
+      <button className="flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC] hover:bg-[#dcdcdc] transition-colors">
         <span>Next</span>
         <Image src="/icons/icon-arrow.svg" width={15} height={15} alt="arrow" />
       </button>
