@@ -2,9 +2,21 @@ import React from "react";
 import TESTIMONIAL from "./testimonials";
 import Image from "next/image";
 
-export const Testimonial: React.FC = () => {
+interface TestimonialProps {
+  scrollRef: React.RefObject<HTMLDivElement>;
+  onScroll: () => void;
+}
+
+export const Testimonial: React.FC<TestimonialProps> = ({
+  scrollRef,
+  onScroll,
+}) => {
   return (
-    <div className="flex gap-6 w-full overflow-x-scroll py-12 scrollbar-hide">
+    <div
+      ref={scrollRef}
+      onScroll={onScroll}
+      className="flex gap-6 w-full overflow-x-scroll py-12 scrollbar-hide"
+    >
       {TESTIMONIAL?.map((item) => (
         <div
           className="border border-[#DCDCDC] rounded-3xl min-w-full lg:min-w-[528px] h-[325px] flex p-8 gap-2"
