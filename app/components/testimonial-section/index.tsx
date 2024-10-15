@@ -13,7 +13,6 @@ export const TestimonialSection: React.FC = () => {
     clientWidth: 0,
   });
 
-  // Initial and resize handler
   useEffect(() => {
     const updateScrollInfo = () => {
       const container = scrollContainerRef.current;
@@ -26,10 +25,8 @@ export const TestimonialSection: React.FC = () => {
       }
     };
 
-    // Update on mount
     updateScrollInfo();
 
-    // Update on window resize
     window.addEventListener("resize", updateScrollInfo);
     return () => window.removeEventListener("resize", updateScrollInfo);
   }, []);

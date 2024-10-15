@@ -16,13 +16,11 @@ export const Controls: React.FC<ControlsProps> = ({
   onNextClick,
   scrollInfo,
 }) => {
-  console.log(scrollInfo);
-
-  const scrollTrackWidth = 100; // This represents 100%
+  const scrollTrackWidth = 100;
 
   // Calculate handle width
   const contentRatio = scrollInfo.clientWidth / scrollInfo.scrollWidth;
-  const handleWidth = Math.max(contentRatio * scrollTrackWidth, 20); // Minimum 20% width
+  const handleWidth = Math.max(contentRatio * scrollTrackWidth, 20);
 
   // Calculate handle position
   const maxScroll = scrollInfo.scrollWidth - scrollInfo.clientWidth;
@@ -30,8 +28,7 @@ export const Controls: React.FC<ControlsProps> = ({
     maxScroll > 0 ? scrollInfo.scrollLeft / maxScroll : 0;
 
   // Adjust handle position calculation
-  const maxHandlePosition = scrollTrackWidth - handleWidth;
-  // const maxHandlePosition = scrollTrackWidth - handleWidth + 8.2;
+  const maxHandlePosition = scrollTrackWidth - handleWidth + 5.2;
   const handlePosition = scrollPercentage * maxHandlePosition;
 
   return (
@@ -50,7 +47,7 @@ export const Controls: React.FC<ControlsProps> = ({
         <span>Previous</span>
       </button>
       <div className="h-2 flex-1 flex items-center justify-center">
-        <div className="bg-[#D5D5D5] h-full rounded-full w-5/6 relative">
+        <div className="bg-[#D5D5D5] h-full rounded-full w-5/6 relative overflow-hidden">
           <div
             className="absolute h-full rounded-full bg-[#2A2A2A] transition-transform duration-300"
             style={{
