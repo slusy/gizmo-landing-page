@@ -13,25 +13,7 @@ export const TestimonialSection: React.FC = () => {
     clientWidth: 0,
   });
 
-  useEffect(() => {
-    const updateScrollInfo = () => {
-      const container = scrollContainerRef.current;
-      if (container) {
-        setScrollInfo({
-          scrollLeft: container.scrollLeft,
-          scrollWidth: container.scrollWidth,
-          clientWidth: container.clientWidth,
-        });
-      }
-    };
-
-    updateScrollInfo();
-
-    window.addEventListener("resize", updateScrollInfo);
-    return () => window.removeEventListener("resize", updateScrollInfo);
-  }, []);
-
-  const handleScroll = () => {
+  const updateScrollInfo = () => {
     const container = scrollContainerRef.current;
     if (container) {
       setScrollInfo({
@@ -40,6 +22,17 @@ export const TestimonialSection: React.FC = () => {
         clientWidth: container.clientWidth,
       });
     }
+  };
+
+  // Initial and resize handler
+  useEffect(() => {
+    updateScrollInfo();
+    window.addEventListener("resize", updateScrollInfo);
+    return () => window.removeEventListener("resize", updateScrollInfo);
+  }, []);
+
+  const handleScroll = () => {
+    updateScrollInfo();
   };
 
   const scrollTo = (direction: "prev" | "next") => {

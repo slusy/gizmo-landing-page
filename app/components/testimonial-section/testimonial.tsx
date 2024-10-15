@@ -15,7 +15,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
     <div
       ref={scrollRef}
       onScroll={onScroll}
-      className="flex gap-6 w-full overflow-x-scroll py-12 scrollbar-hide"
+      className="flex gap-6 w-full overflow-x-scroll py-12 scrollbar-hide scroll-smooth"
     >
       {TESTIMONIAL?.map((item) => (
         <div
