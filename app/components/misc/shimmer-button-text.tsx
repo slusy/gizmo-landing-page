@@ -27,7 +27,7 @@ export const ShimmerButtonText = (props: Props) => {
       animate="initial"
       whileHover="animate"
       className={classNames({
-        "flex items-center gap-2 border rounded-full py-2 px-3 self-start":
+        "flex items-center gap-2 border rounded-full py-1.5 px-2 lg:py-2 lg:px-3 self-start":
           true,
         "border-[#DADADA]": bgColor === "white",
         "border-[#2D2D2D]": bgColor === "black",
@@ -35,6 +35,7 @@ export const ShimmerButtonText = (props: Props) => {
     >
       <span
         className={classNames({
+          "text-sm lg:text-base": true,
           "text-[#414141]": bgColor === "white",
           "text-white": bgColor === "black",
         })}
@@ -43,7 +44,7 @@ export const ShimmerButtonText = (props: Props) => {
       </span>
       <div
         className={classNames({
-          "border  rounded-full p-2 w-[35px] h-[35px] flex items-center justify-center relative overflow-hidden":
+          "border rounded-full p-2 lg:w-[35px] lg:h-[35px] flex items-center justify-center relative overflow-hidden":
             true,
           "border-[#C0C0C0]": bgColor === "white",
           "border-[#343434]": bgColor === "black",
