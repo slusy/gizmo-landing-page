@@ -31,18 +31,19 @@ export const Testimonial: React.FC<TestimonialProps> = ({
             />
           </div>
           <div className="flex-1 flex flex-col gap-8">
-            <h1 className="text-2xl lg:text-3xl">{item?.message}</h1>
+            <h1 className="text-xl lg:text-3xl">{item?.message}</h1>
             <div className="flex items-center gap-4">
               <div>
                 <Image
                   src={item?.profileImage}
-                  width={55}
-                  height={55}
+                  width={35}
+                  height={35}
                   alt="user profile"
+                  className="w-[36px] h-[36px] lg:w-[50px] lg:h-[50px]"
                 />
               </div>
               <div>
-                <p className="text-[#3064E8] text-xl font-medium">
+                <p className="text-[#3064E8] text-base lg:text-xl font-medium">
                   {item?.name}
                 </p>
                 <p className="text-xs">on {item?.product}</p>
