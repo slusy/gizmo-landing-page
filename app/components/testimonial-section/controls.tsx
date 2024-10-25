@@ -47,7 +47,7 @@ export const Controls: React.FC<ControlsProps> = ({
         className="hidden md:flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC] hover:bg-[#dcdcdc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <Image
-          src="/icons/icon-arrow.svg"
+          src="icons/icon-arrow.svg"
           width={15}
           height={15}
           alt="arrow"
@@ -75,7 +75,7 @@ export const Controls: React.FC<ControlsProps> = ({
         className="hidden md:flex items-center gap-2 border border-[#C6C6C6] text-[#2A2A2A] rounded-full px-5 py-2 bg-[#ECECEC] hover:bg-[#dcdcdc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <span>Next</span>
-        <Image src="/icons/icon-arrow.svg" width={15} height={15} alt="arrow" />
+        <Image src="icons/icon-arrow.svg" width={15} height={15} alt="arrow" />
       </button>
     </div>
   );

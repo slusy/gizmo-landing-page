@@ -21,23 +21,23 @@ const PRODUCT_DETAILS: ProductDetails = {
     category: "Smart Watch",
     features: [
       {
-        icon: "/icons/icon-heart.svg",
+        icon: "icons/icon-heart.svg",
         description: "Continous heart rate tracking",
       },
       {
-        icon: "/icons/icon-sleep.svg",
+        icon: "icons/icon-sleep.svg",
         description: "Sleep analysis and insights",
       },
       {
-        icon: "/icons/icon-bloodOxygen.svg",
+        icon: "icons/icon-bloodOxygen.svg",
         description: "Blood oxygen level monitoring",
       },
       {
-        icon: "/icons/icon-nfc.svg",
+        icon: "icons/icon-nfc.svg",
         description: "Contactless payments",
       },
       {
-        icon: "/icons/icon-music.svg",
+        icon: "icons/icon-music.svg",
         description: "Music control",
       },
     ],
@@ -48,7 +48,7 @@ const PRODUCT_DETAILS: ProductDetails = {
     category: "VR Headset",
     features: [
       {
-        icon: "/icons/icon-display.svg",
+        icon: "icons/icon-display.svg",
         description: "8K Resolution virtual display",
       },
     ],
@@ -59,11 +59,11 @@ const PRODUCT_DETAILS: ProductDetails = {
     category: "Smart Speaker",
     features: [
       {
-        icon: "/icons/icon-spatial.svg",
+        icon: "icons/icon-spatial.svg",
         description: "360-degree sound for immersive listening",
       },
       {
-        icon: "/icons/icon-wave.svg",
+        icon: "icons/icon-wave.svg",
         description: "Smart home devices controls with voice",
       },
     ],
