@@ -8,7 +8,7 @@ export const ProductOne: React.FC = () => {
   return (
     <div className="w-full h-[335px] lg:h-full p-8 lg:p-12 flex flex-col gap-4 relative overflow-hidden rounded-3xl border border-[#D8D8D8] bg-black shadow-[0px_0px_13px_0px_#00000040]">
       <Image
-        src="/images/featured-watch.png"
+        src="images/featured-watch.png"
         alt="watch"
         width={550}
         height={550}
