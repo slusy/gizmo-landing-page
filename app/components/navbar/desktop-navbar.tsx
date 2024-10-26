@@ -45,7 +45,7 @@ export const DesktopNavbar: React.FC = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="fixed self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full backdrop-blur-md"
+            className="fixed self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full backdrop-blur-md z-[99999]"
           >
             {NAV_LINKS?.map((item) => (
               <a

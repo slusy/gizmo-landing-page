@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "./components/navbar";
 import InnerPageLayout from "./components/misc/inner-page-layout";
+import { Footer } from "./components/footer";
 
 const primaryFont = localFont({
   src: "../public/fonts/Satoshi-Variable.ttf",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <InnerPageLayout>
           <Navbar />
           {children}
+          <Footer />
         </InnerPageLayout>
       </body>
     </html>

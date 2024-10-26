@@ -16,7 +16,7 @@ export const MobileNavbar: React.FC = () => {
       </div>
       <button
         className={classNames({
-          "border rounded-full w-10 h-10 p-2 flex items-center justify-center z-[1000] backdrop-blur-md":
+          "border rounded-full w-10 h-10 p-2 flex items-center justify-center z-[9999] backdrop-blur-md":
             true,
           "border-[#C4CACB]": !showMobileNav,
           "border-transparent bg-[#3D3D3D] fixed right-4": showMobileNav,
@@ -34,7 +34,7 @@ export const MobileNavbar: React.FC = () => {
       </button>
       <div
         className={classNames({
-          "bg-[#313131] top-0 fixed left-0 w-full h-full flex flex-col items-center justify-center gap-4":
+          "bg-[#313131] top-0 fixed left-0 w-full h-full flex flex-col items-center justify-center gap-4 z-[9998]":
             true,
           block: showMobileNav,
           hidden: !showMobileNav,
