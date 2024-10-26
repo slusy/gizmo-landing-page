@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align='center'>Gizmo</h1>
+<p align='center'>Gizmo is a sleek and interactive online platform designed to showcase the latest and greatest tech gadgets. Gizmo offers a visually stunning and user-friendly experience.</p>
 
-## Getting Started
+## Demo
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/8167ea25-96e8-43e8-a75f-0605e458e85c)
+)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the live website [here](https://achal-00.github.io/gizmo-landing-page/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next JS
+- Tailwind CSS
+- React JS
+- Framer Motion
+- TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Run Locally
 
-## Learn More
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Achal-00/gizmo-landing-page.git
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
+   ```bash
+   cd gizmo-landing-page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
+   ```bash
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Start the development server:
+   ```bash
+   npm run dev
 
-## Deploy on Vercel
+7. Open your browser and visit http://localhost:3000
+   
+## Contact Information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For questions or feedbacks feel free to contact:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Email:** achaldev3@gmail.com
+- **LinkedIn:** [Achal](https://www.linkedin.com/in/-achal/)
+- **Designed by:** [Sanand](https://www.behance.net/sanandchandran)
