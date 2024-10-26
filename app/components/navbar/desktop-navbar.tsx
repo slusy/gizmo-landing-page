@@ -31,11 +31,11 @@ export const DesktopNavbar: React.FC = () => {
   });
 
   return (
-    <nav className="hidden lg:grid grid-cols-1 items-center">
+    <nav className="hidden lg:flex flex-col">
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        className="col-start-1 col-end-2 row-start-1 row-end-2"
+        className="self-start"
       >
         <Image src="logo/full-logo.svg" alt="logo" width={130} height={130} />
       </motion.div>
@@ -45,7 +45,7 @@ export const DesktopNavbar: React.FC = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="fixed col-start-1 col-end-2 row-start-1 row-end-2 self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full backdrop-blur-md z-[99999]"
+            className="fixed self-center justify-self-center flex items-center gap-1 border border-[#C4CACB] px-2 py-[6px] rounded-full backdrop-blur-md z-[99999]"
           >
             {NAV_LINKS?.map((item) => (
               <a
