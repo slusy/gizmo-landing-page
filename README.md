@@ -6,7 +6,7 @@
 ![image](https://github.com/user-attachments/assets/8167ea25-96e8-43e8-a75f-0605e458e85c)
 )
 
-Check out the live website [here](https://achal-00.github.io/gizmo-landing-page/).
+Check out the live website [here](https://spudoodle.github.io/gizmo-landing-page/).
 
 ## Technologies Used
 
@@ -20,7 +20,7 @@ Check out the live website [here](https://achal-00.github.io/gizmo-landing-page/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Achal-00/gizmo-landing-page.git
+   git clone https://github.com/spudoodle/gizmo-landing-page.git
 
 2. Navigate to the project directory:
    ```bash
@@ -35,11 +35,3 @@ Check out the live website [here](https://achal-00.github.io/gizmo-landing-page/
    npm run dev
 
 7. Open your browser and visit http://localhost:3000
-   
-## Contact Information
-
-For questions or feedbacks feel free to contact:
-
-- **Email:** achaldev3@gmail.com
-- **LinkedIn:** [Achal](https://www.linkedin.com/in/-achal/)
-- **Designed by:** [Sanand](https://www.behance.net/sanandchandran)
